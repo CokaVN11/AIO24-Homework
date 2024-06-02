@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.0.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "prepare": "husky",
+    "format": "autopep8 --in-place --aggressive --aggressive --recursive ."
+  }
+}
