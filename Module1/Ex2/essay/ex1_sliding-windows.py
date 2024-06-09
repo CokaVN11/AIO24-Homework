@@ -1,7 +1,7 @@
 def max_sliding_window(arr: list, k: int) -> list:
     res = []
     for i in range(len(arr) - k + 1):
-        res.append(max(arr[i:i+k]))
+        res.append(max(arr[i:i + k]))
 
     return res
 
