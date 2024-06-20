@@ -1,5 +1,6 @@
-import torch 
+import torch
 import torch.nn as nn
+
 
 class Softmax(nn.Module):
     def __init__(self):
@@ -7,6 +8,7 @@ class Softmax(nn.Module):
 
     def forward(self, x: torch.Tensor):
         return torch.exp(x) / torch.exp(x).sum()
+
 
 class SoftmaxStable(nn.Module):
     def __init__(self):
@@ -22,11 +24,7 @@ if __name__ == '__main__':
     softmax = Softmax()
     output = softmax(data)
     print(output)
-    
+
     softmax_stable = SoftmaxStable()
     output_stable = softmax_stable(data)
     print(output_stable)
-    
-    
-    
-
